@@ -1,1 +1,48 @@
+Este .zip contiene los directorios de un balanceador de carga con sus 2 webs y un nginx con su configuracion cada uno
 
+balanceador_estructura/
+├── docker-compose.yml
+├── web1/
+│   ├── index.html
+│   └── ... (otros archivos de web1)
+├── web2/
+│   ├── index.html
+│   └── ... (otros archivos de web2)
+└── balanceador/
+    └── nginx.conf
+
+
+Manual de utilizacion:
+
+# Proyecto de Balanceador de Carga con Docker
+
+## Descripción
+
+Este proyecto configura un balanceador de carga utilizando Nginx, que distribuye el tráfico entre dos aplicaciones web (`web1` y `web2`). Toda la configuración necesaria se ha incluido en el archivo `docker-compose.yml`.
+
+## Instrucciones
+
+1. **Clonar el repositorio**:
+
+   ```bash
+   git clone https://github.com/tu_usuario/balanceador_estructura.git
+   cd balanceador_estructura
+   ```
+
+2. **Ejecutar Docker Compose**:
+
+   ```bash
+   docker-compose up -d
+   ```
+
+3. **Acceder a la aplicación**:
+
+   Abra un navegador web y vaya a `http://localhost` para acceder a la aplicación.
+
+## Consideraciones
+
+- Asegúrese de que Docker y Docker Compose estén instalados en su sistema antes de ejecutar los comandos.
+
+## Información de Contacto
+
+Si tiene alguna pregunta o necesita asistencia, por favor contacte al estudiante a través del correo electrónico [tu_correo@example.com].
